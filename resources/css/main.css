@@ -1,8 +1,25 @@
+/* * * * * FONTS AND COLORS * * * * */
+/*
+font-family: 'Rubik', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
 
 /********** SHARED STYLES **********/
 
 body {
-    
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'Raleway', sans-serif;
+    color: #3e2f4f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
 }
 
 .flex-container {
@@ -20,13 +37,31 @@ header {
     position: fixed;
     z-index: 1;
     background-color: #fff;
+    justify-content: center;
 }
 
 
 
 header .logo {
+    display: flex;
+    align-items: center;
     padding-left: 24px;
     height: 32px;
+}
+
+header .logo img {
+    height: 48px;
+}
+
+header .logo h4 {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+header .logo h4 .logo-title {
+    font-weight: bold;
 }
 
 nav {
@@ -42,10 +77,25 @@ nav {
 
 .menu-item a {
     text-decoration: none;
+    color: #3e2f4f;
+    padding: .2em;
+    border-radius: 4px;
 }
 
 .menu-item a:hover {
-    color: green;
+    background-color: #3e2f4f;
+    color: #fff;
+    transition: background-color .4s ease-in-out .1s,
+                color .5s linear .2s;
+}
+
+.menu-item a:active {
+    background-color: #fff;
+    color: red;
+    border: .5px solid red;
+    transition: background-color .4s ease-in-out .1s,
+                color .5s linear .2s,
+                border .4s ease-in-out .1s;
 }
 
 /********** MAIN CONTENT **********/
@@ -56,7 +106,7 @@ nav {
 }
 
 .banner {
-    background-color: #bbb;
+    background-color: #d5d1c6;
     padding: 32px 24px;
     /* height: 600px; */
     display: flex;
@@ -221,3 +271,7 @@ nav {
 #research-img {
     background-image: url('../images/thesis-now-and-then.jpg');
 }
+
+
+
+
