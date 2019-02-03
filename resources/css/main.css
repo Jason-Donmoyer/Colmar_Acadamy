@@ -6,6 +6,7 @@ font-family: 'Raleway', sans-serif;
 
 /********** SHARED STYLES **********/
 
+
 body {
     font-size: 16px;
     line-height: 1.2;
@@ -20,6 +21,15 @@ h4,
 h5,
 h6 {
     font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.2em;
 }
 
 .flex-container {
@@ -136,14 +146,41 @@ nav {
 }
 
 .content-container h1 {
-    font-size: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.content-container h3 {
+    padding: 32px 0;
+    font-size: 24px;
 }
 
 .start-btn {
-    width: 100px;
-    height: 20px;
+    width: 100%;
     background-color: #000;
     color: #fff;
+    padding: 8px 0;
+    border-radius: 4px;
+}
+
+.start-btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border: .4px solid #000;
+    font-size: 18px;
+    font-stretch: expanded;
+    transition: background-color .2s ease-out .1s,
+                color .2s linear .1s,
+                font-size .2s ease-in-out .4s,
+                font-stretch .2s ease-in-out .4s;
+}
+
+.start-btn:active {
+    width: 90%;
+    font-weight: bold;
+    transition: width 1.2s linear .2s,
+                font-weight .1s linear 1.2s;
 }
 
 /********** PRACTICE **********/
@@ -158,23 +195,69 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 /* * * PRACTICE-COL-LG * * */
 
 .practice-col-lg {
-    width: 60%;
+    flex-basis: 58%;
+    height: auto;
 }
 
 .practice-col-lg img {
     width: 100%;
 }
 
+.practice-col-lg .practice-content {
+    padding: 32px 0; 
+}
+
+.practice-col-lg .practice-content p {
+    padding-top: 24px;
+}
+
+
+
 /* * * PRACTICE-COL-MD * * */
 
+.practice-col-md {
+    flex-basis: 38%;
+    padding-left: 24px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.practice-col-md-row {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin: auto; */
+}
+
+.practice-col-md-row:last-child {
+    background-color: #d5d1c6;
+}
+
+.practice-col-md-img-container {
+    width: 35%;
+    height: 100%;
+    margin: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .practice-col-md-img {
-    height: 100px;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
+    background-size: contain; 
 }
 
 .orientation .practice-col-md-img {
@@ -189,11 +272,31 @@ nav {
     background-image: url('../images/information-guest-lecture.jpg');
 }
 
+.practice-col-md-content {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.practice-col-md-content p {
+    padding: 8px 0;
+}
+
 /********** START-LEARNING **********/
 
 .start-learning {
-    background-color: #bbb;
-    padding: 32px 24px;
+    background-color: #d5d1c6;
+    padding: 0 72px 32px 72px;
+    align-content: center;
+    justify-content: center;
+}
+
+.start-learning h2 {
+    width: 100%;
+    text-align: center;
+    padding: 32px 0;
 }
 
 .start-learning-col {
@@ -201,13 +304,17 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    justify-content: center;
+    flex-basis: 30%;
+    height: 100%;
+    margin: 0 0 32px 32px;
 }
 
 .start-learning-col-img {
     width: 100%;
-    height: 100px;
+    height: 125px;
     background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 #software-engineer-img {
@@ -234,6 +341,19 @@ nav {
     background-image: url('../images/course-marketing.jpg');
 }
 
+.start-learning-col-content {
+    padding: 16px 16px 24px 16px; 
+    text-align: center;
+}
+
+.start-learning-col-content h3 {
+    font-weight: bold;
+}
+
+.start-learning-col-content .courses {
+    text-transform: uppercase;
+    padding: 8px 0;
+}
 
 /********** THESIS **********/
 
