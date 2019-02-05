@@ -2,6 +2,8 @@
 /*
 font-family: 'Rubik', sans-serif;
 font-family: 'Raleway', sans-serif;
+color: #3e2f4f
+background-color: #d5d1c6
 */
 
 /********** SHARED STYLES **********/
@@ -133,7 +135,7 @@ nav {
 }
 
 .img-container {
-    max-width: 60%;
+    flex-basis: 58%;
 }
 .img-container img {
     width: 100%;
@@ -281,6 +283,10 @@ nav {
     padding: 8px 0;
 }
 
+.read-more-link:hover {
+    color: red;
+}
+
 /********** START-LEARNING **********/
 
 .start-learning {
@@ -354,6 +360,10 @@ nav {
 
 /********** THESIS **********/
 
+.thesis {
+    border-bottom: .75px solid #d5d1c6;
+}
+
 .thesis-col-lg,
 .thesis-col-md {
     display: flex;
@@ -368,7 +378,7 @@ nav {
 }
 
 .thesis-video-container {
-    margin: 24px;
+    margin: 0 24px 24px 24px;
     
 }
 
@@ -377,22 +387,37 @@ nav {
     height: 400px;
 }
 
-
-/* * * THESIS-COL-MD * * */
-
-.thesis h2 {
+.thesis .thesis-title {
     width: 100%;
     text-align: center;
     padding: 32px 0;
 }
 
+.thesis-content {
+    padding-left: 24px;
+}
+
+.thesis-content p {
+    padding-top: 8px;
+    padding-bottom: 32px;
+}
+
+/* * * THESIS-COL-MD * * */
+
+
 .thesis-col-md {
     flex-basis: 38%;
     padding-left: 24px;
+    padding-top: 1em;
+    padding-bottom: 12%;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.thesis-row:first-child {
+    background-color: #d5d1c6;
 }
 
 .thesis-row {
@@ -433,6 +458,40 @@ nav {
     justify-content: center;
     align-items: left;
     flex-direction: column;
+}
+
+.thesis-row-content p {
+    padding: 8px 0;
+}
+
+/********** FOOTER **********/
+
+footer {
+    padding-bottom: 50px;
+}
+
+footer span {
+    padding: 16px 0 0 24px;
+}
+
+footer ul {
+    padding-right: 24px;
+    margin-top: 16px;
+    text-align: right;
+    flex-grow: 1;
+}
+
+footer li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+footer li a {
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: red;
 }
 
 
