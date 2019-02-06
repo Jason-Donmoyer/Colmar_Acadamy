@@ -41,6 +41,10 @@ h3 {
 
 /********** HEADER **********/
 
+.mobile-header {
+    display: none;
+}
+
 header {
     width: 100%;
     height: 64px;
@@ -494,5 +498,43 @@ footer li a:hover {
     color: red;
 }
 
+
+@media only screen and (max-width: 450px) {
+
+    body {
+        display: block;
+    }
+
+    .flex-container {
+        display: block;
+    }
+
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 64px;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-nav span {
+        display: inline-block;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    
+    
+
+}
 
 
