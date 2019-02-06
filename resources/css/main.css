@@ -55,8 +55,6 @@ header {
     justify-content: center;
 }
 
-
-
 header .logo {
     display: flex;
     align-items: center;
@@ -190,7 +188,7 @@ nav {
                 font-weight .1s linear 1.2s;
 }
 
-/********** PRACTICE **********/
+/********** DESKTOP PRACTICE **********/
 
 .practice {
     background-color: #fff;
@@ -498,8 +496,13 @@ footer li a:hover {
     color: red;
 }
 
+/********** MEDIA QUERIES **********/
 
-@media only screen and (max-width: 450px) {
+/* * * * * 760px * * * * */
+
+@media only screen and (max-width: 760px) {
+
+    /***** MOBILE SHARED STYLES *****/
 
     body {
         display: block;
@@ -508,6 +511,8 @@ footer li a:hover {
     .flex-container {
         display: block;
     }
+
+    /***** MOBILE NAV *****/
 
     .desktop-header {
         display: none;
@@ -532,9 +537,82 @@ footer li a:hover {
         padding-right: 28px;
     }
 
+    /***** MOBILE BANNER *****/
+
+    .banner {
+        display: block;
+        padding: 0;
+    }
     
-    
+    .img-container,
+    .content-container {
+        width: 100%;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;      
+    }
+
+    .content-container {
+        margin: 0;
+        text-align: center;
+    }
+
+    .content-container h1 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .content-container h3 {
+        padding-bottom: 24px; 
+        padding-top: 0;
+    }
+
+    .start-btn {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 32px;
+    }
+
+    /***** MOBILE PRACTICE *****/
+
+    .desktop-practice-div {
+        display: none;
+    }
+
+    .mobile-practice-div {
+        display: block;
+        width: 100%;
+        margin: 16px;
+        background-color: #fff;
+    }
+
+    .mobile-practice-row {
+        background-color: #fff;
+        margin-bottom: 64px;
+    }
+
+    .mobile-practice-row img {
+        width: 100%;
+    }
+
+    .mobile-practice-row h2 {
+        padding-left: 16px;
+        margin-top: 16px;
+    }
+
+    .mobile-practice-row p {
+        padding: 16px 0 16px 16px;
+    }
+
+    .mobile-practice-row a {
+        text-decoration: none;
+        padding-left: 16px;
+    }
 
 }
+
+
+/* * * * * 450px * * * * */
 
 
