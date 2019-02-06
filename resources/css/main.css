@@ -189,6 +189,9 @@ nav {
 }
 
 /********** DESKTOP PRACTICE **********/
+.desktop-practice-div {
+    display: block;
+}
 
 .practice {
     background-color: #fff;
@@ -290,6 +293,10 @@ nav {
 }
 
 /********** START-LEARNING **********/
+
+.desktop-start-learning-div {
+    display: block;
+}
 
 .start-learning {
     background-color: #d5d1c6;
@@ -500,7 +507,14 @@ footer li a:hover {
 
 /* * * * * 760px * * * * */
 
-@media only screen and (max-width: 760px) {
+@media only screen and (min-width: 681px) {
+    .mobile-practice-div {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 680px) {
 
     /***** MOBILE SHARED STYLES *****/
 
@@ -615,4 +629,42 @@ footer li a:hover {
 
 /* * * * * 450px * * * * */
 
+
+@media only screen and (min-width: 451px) {
+    .mobile-start-learning-div {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+/***** MOBILE START LEARNING *****/
+
+    .desktop-start-learning-div {
+        display: none;
+    }
+
+    .mobile-start-learning-div {
+        margin: 16px 16px 32px 16px;
+        display: block;
+    }
+
+    .mobile-start-learning-nav {
+        background-color: #fff;
+    }
+
+    .mobile-start-learning-nav li {
+        margin-bottom: 8px;
+        background-color: #d5d1c6;
+    }
+    .mobile-start-learning-nav li a {
+        text-decoration: none;
+        color: #3e2f4f;
+    }
+
+    .mobile-start-learning-link {
+        padding: 16px;
+        font-weight: bold;
+    }
+}
 
