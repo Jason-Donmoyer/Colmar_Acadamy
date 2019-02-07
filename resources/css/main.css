@@ -604,6 +604,8 @@ footer li a:hover {
     .mobile-practice-row {
         background-color: #fff;
         margin-bottom: 64px;
+        padding-right: 16px;
+        margin-right: 16px;
     }
 
     .mobile-practice-row img {
@@ -622,6 +624,46 @@ footer li a:hover {
     .mobile-practice-row a {
         text-decoration: none;
         padding-left: 16px;
+    }
+    /***** THESIS *****/
+
+    .thesis {
+        display: block;
+        border: none;
+    }
+
+    .thesis-title {
+        text-align: center;
+        padding-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    .thesis-video-container {
+        display: block;
+        margin: 0 0 24px 0;
+        padding: 0;
+    }
+
+    .thesis-video-container video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .thesis-content,
+    .thesis-col-md {
+        display: none;
+    }
+
+    /***** FOOTER *****/
+
+    footer {
+        display: block;
+        margin: 16px 0;
+        padding-bottom: 0;
+    }
+
+    footer ul {
+        display: none;
     }
 
 }
